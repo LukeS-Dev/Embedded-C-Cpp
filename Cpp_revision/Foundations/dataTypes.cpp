@@ -1,6 +1,8 @@
 #include <iostream> 
 #include <string> 
 
+using std::cout; using std::endl;
+
 bool trueExpression = true;
 bool falseExpression = false;
 
@@ -27,6 +29,14 @@ double doubleDefault = 1.5;
 char nullChar = '\0';
 char newLine = '\n';
 
+//Auto typing
+auto a = 8;
+auto b = 1234567811111;
+auto c = 3.142f;
+auto d = 3.142;
+auto e = true;
+auto f = 'd';
+
 int main()
 {
     //Anything here is a local variable, the data outside are
@@ -35,5 +45,16 @@ int main()
 
     /* This is a multi-line commment
     decloration.    
+
+    pointer : * Dereference
+    pointer : & Returns the address
+    pointer : -> Gives acces to members or structures of the pointer. 
+
     */
+    cout << typeid(a).name() << endl;
+    cout << typeid(b).name() << endl;
+    cout << typeid(c).name() << endl;
+    cout << typeid(d).name() << endl;
+    cout << typeid(e).name() << endl;
+    cout << typeid(f).name() << endl;
 }
