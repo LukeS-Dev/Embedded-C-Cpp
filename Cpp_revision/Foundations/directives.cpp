@@ -23,3 +23,9 @@ int main()
     std::cout << "The result is " << large << std::endl;
     return 0;
 }
+
+/* We can define constants -> Directives / Macros / Define are macros. 
+   We can also do constant defs with Const.
+   C -> only means variable can't be changed. 
+   C++ -> Const has additional protection in place.
+*/
