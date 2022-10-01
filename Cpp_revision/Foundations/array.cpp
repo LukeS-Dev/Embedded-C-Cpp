@@ -18,5 +18,4 @@ int main()
         cout << globalInt[i] << endl;
     }
     return 0;
-
 }
