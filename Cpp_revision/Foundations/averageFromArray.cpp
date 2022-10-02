@@ -12,7 +12,6 @@ int main()
     std::cout << average(numbers) << std::endl;
 }
 
-
 float average(int input[MAX_ARRAY_LEN])
 {
     float total = 0.0f;
