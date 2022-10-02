@@ -9,20 +9,21 @@
 class student
 {
 public: 
-    student(std::string name_i, int age_i, int wam_i);
+    student(std::string name_i, int age_i, double wam_i);
+    ~student();
 
     std::string get_name();
     int get_age();
-    int get_wam();
+    double get_wam();
 
     void set_name(std::string new_name);
     void set_age(int new_age);
-    void set_wam(int new_wam);
+    void set_wam(double new_wam);
 
 private:
     std::string name;
     int age;
-    int wam;
+    double wam;
 
 };
 

@@ -5,12 +5,14 @@
 #include "../public/student.hpp"
 
 //Constructor
-student::student(std::string name_i, int age_i, int wam_i)
+student::student(std::string name_i, int age_i, double wam_i)
 {
     name = name_i;
     age = age_i;
     wam = wam_i;
 }
+
+student::~student(){}
 
 //Get Functions
 std::string student::get_name()
@@ -23,7 +25,7 @@ int student::get_age()
     return this->age;
 }
 
-int student::get_wam()
+double student::get_wam()
 {
     return this->wam;
 }
@@ -39,12 +41,7 @@ void student::set_age(int new_age)
     age = new_age;
 }
 
-void student::set_wam(int new_wam)
+void student::set_wam(double new_wam)
 {
     wam = new_wam;
-}
-
-int main()
-{
-    return 0;
 }
