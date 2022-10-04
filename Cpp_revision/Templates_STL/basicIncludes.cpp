@@ -1,7 +1,15 @@
 #include <iostream>
 #include <string>
 
-//Basic start template
+//Class or Typename are interchangable 
+
+template <class T> 
+T printType( const T & type)
+{
+    std::cout << type << std::endl;
+    return 0;
+}
+
 
 int main()
 {
