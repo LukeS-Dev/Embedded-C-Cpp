@@ -3,7 +3,8 @@
 #include <vector> 
 
 //Type deduction means that the compiler can 
-//Determine type based on the input
+//Determine type based on the input - in these situations we don't
+//Have to specify types.
 
 template <class T> 
 T maxof( const T & a, const T & b)
@@ -18,10 +19,7 @@ void printv(const std::vector<T> & v)
     if (v.empty()) return;
     std::cout << "Vector elements : ";
     //Here we iterate over vector.
-    for(const T & i : v)
-    {
-        std::cout << i << " ";
-    }
+    for(const T & i : v) std::cout << i << " ";
 }
 
 int main()
