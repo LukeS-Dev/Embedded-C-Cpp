@@ -47,5 +47,12 @@ int main()
     reportque(q1);
     q1.pop();
     reportque(q1);
-
+    
+    //In addition there is a STACK which is last in 
+    //First out container. Basically can be used for
+    //Tracing functions etc. (Call Stack)
+    
+    //Function 3 -> Last entry (First to pop)
+    //Function 2
+    //Function 1 -> First entry (Last to pop)
 }
