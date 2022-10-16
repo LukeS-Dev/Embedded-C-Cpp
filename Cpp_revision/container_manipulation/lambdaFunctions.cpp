@@ -41,15 +41,14 @@ void vectorTransform()
 {
     std::vector<std::string> stringVector = {"One","Two","Three","Four","Five","Six"};
 
-    std::vector<size_t> strSize(0,stringVector.size());
+    std::vector<size_t> strSize(stringVector.size());
     printV(stringVector);
 
-    strSize = std::transform(
+    std::transform(
         stringVector.begin(),
         stringVector.end(),
         strSize.begin(),
-        [](std::string & input) {return input.size();});
+        [](std::string & input) -> size_t {return input.size();});
 
-    //printV(strSize);
-    
+    printV<size_t>(strSize);
 }
