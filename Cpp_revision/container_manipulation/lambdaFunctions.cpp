@@ -17,14 +17,19 @@ void printV(std::vector<T> inputVect)
     std::cout << std::endl;
 }
 
+template<typename T>
+size_t strToSize(T & input)
+{
+    return input.size();
+}
+
+
 int main()
 {
     //lambdaSum();
     vectorTransform();
-
     return 0;
 }
-
 
 void lambdaSum()
 {
@@ -49,6 +54,12 @@ void vectorTransform()
         stringVector.end(),
         strSize.begin(),
         [](std::string & input) -> size_t {return input.size();});
+
+    std::transform(
+        stringVector.begin(),
+        stringVector.end(),
+        strSize.begin(),
+        strToSize<std::string>);
 
     printV<size_t>(strSize);
 }
